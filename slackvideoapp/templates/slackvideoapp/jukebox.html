@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JUKEBOX</title>
+  <meta charset="utf-8">
+</head>
+<body>
+
+  <h1>JUKEBOX</h1>
+  <p>A simple jukebox application<br><kbd>Refresh page to get new links.</kbd></p>
+  <h3 p align=left>Go to jukebox</h3>
+<a href="/slackvideoapp/jukebox/"  role="button">Jukebox App!</a>
+<br><br>
+
+
+      <h3 p align=left>VOTE VIDEOS</h3>
+      <ul>
+    <li >Start by posting you tube links to your clack channel</li>
+    <li>Refresh page for the updated voting list</li>
+    <li>Copy and paste the links to your address bar and vote if you like it!</li>
+    <li>click the GO! button after voting</li>
+  </ul>
+<form action="/slackvideoapp/home/" method="post" >
+
+    {% csrf_token %}
+    {{ form }}
+
+    <input type="submit"  value="Vote">
+</form>
+
+
+</body>
+</html>
