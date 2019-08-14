@@ -5,7 +5,7 @@
 * Backend code for Jukebox.
 * Version 0.1
 * Python 3.6.9
-* Django 2.2.2
+* Django 2.2.0
 
 ### How do I get set up? ###
 
